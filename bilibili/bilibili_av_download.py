@@ -1,4 +1,4 @@
-def change(x):
+def change(x):  #bv号转av号
    tr = {}
    table = 'fZodR9XQDSUm21yCkr6zBqiveYah8bt4xsWpHnJE7jL5VG3guMTKNPAwcF'
    s = [11, 10, 3, 8, 4, 6]
@@ -11,7 +11,7 @@ def change(x):
        r+=tr[x[s[i]]]*58**i
    return (r-add)^xor
 
-def choose(url):
+def choose(url):  #分类处理(番剧与普通视频)
    import re
    try:
        modle_video = r'BV\w{10}'
@@ -25,7 +25,7 @@ def choose(url):
        new_url='https://www.bilibili.com/bangumi/play/'+new
    return new_url
 
-def download(url):
+def download(url):  #下载type为视频清晰类型
    import sys
    import getpass
    import you_get
