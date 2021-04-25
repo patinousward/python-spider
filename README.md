@@ -2,6 +2,7 @@
 
 ### 1.1_b站视频下载
 - 安装python和you-get
+- 修改bilibili_av_download.py脚本中的下载目录
 - python3 bilibili_av_download.py
 - 输入视频url即可
 ```
